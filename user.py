@@ -30,16 +30,16 @@ token = '2086501602:AAHWXZ1yNZKXU1DDf7dX6X8RjzbiXZbPAwc'
 
 ku = ('{"account_created": false, "errors": {"email": [{"message": "Too many accounts are using a@gmail.com.", "code": "email_sharing_limit"}], "__all__": [{"message": "Create a password at least 6 characters long.", "code": "too_short_password"}]}, "dryrun_passed": false, "username_suggestions": [], "status": "ok", "error_type": "form_validation_error"}')
 
-u1 = '_.qwertyuioplkjhgfdsazxcvbnm1234567890'
+u1 = 'qwertyuioplkjhgfdsazxcvbnm1234567890'
 u2 = 'qwertyuioplkjhgfdsazxcvbnm1234567890'
 u3 = '.'
 u4 = '_'
 while True:
-		k1 = str(''.join(random.choice(u1) for i in range(4)))
-#		ok = str("".join(random.choice(u2+u1)for i in #range(1)))
+		k1 = str(''.join(random.choice(u1) for i in range(2)))
+		ok = str("".join(random.choice(u2)for i in range(1)))
 #		o1 = str("".join(random.choice(u3)for i in range(1)))
-#		o2 = str("".join(random.choice(u4)for i in range(2)))
-		ks = k1
+		o2 = str("".join(random.choice(u4)for i in range(2)))
+		ks = k1+ok+o2
 	
 		url = 'https://www.instagram.com/accounts/web_create_ajax/attempt/'
 	
